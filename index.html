@@ -91,7 +91,7 @@ footer strong{color:#fff}footer a{color:#ccc}
     <a href="#home">Home</a><a href="#services">Services</a><a href="#how">How it works</a>
     <a href="#order">Order</a><a href="#faq">FAQ</a>
   </nav>
-</header>
+<a class="btn btn-primary" href="https://discord.gg/zqaEf7Bjx" target="_blank" rel="noopener noreferrer">Join Discord</a>\n</header>
 
 <main>
 <section class="hero" id="home">
@@ -112,20 +112,20 @@ footer strong{color:#fff}footer a{color:#ccc}
   <div class="cards">
     <article class="card">
       <h3>Basic Edit</h3><p>Simple improvements for everyday photos.</p>
-      <div class="price">£5</div>
+      <div class="price">1 Boost</div>
       <ul><li>Colour correction</li><li>Brightness & contrast</li><li>Basic cropping</li><li>One edited image</li></ul>
       <a class="btn primary" href="#order">Choose Basic</a>
     </article>
     <article class="card featured">
       <div class="badge">POPULAR</div>
       <h3>Standard Edit</h3><p>A more detailed edit for a polished result.</p>
-      <div class="price">£10</div>
+      <div class="price">2 Boosts</div>
       <ul><li>Everything in Basic</li><li>Background cleanup</li><li>Object removal</li><li>Detailed retouching</li></ul>
       <a class="btn primary" href="#order">Choose Standard</a>
     </article>
     <article class="card">
       <h3>Premium Edit</h3><p>Complex or highly customised photo work.</p>
-      <div class="price">£20</div>
+      <div class="price">3 Boosts</div>
       <ul><li>Advanced retouching</li><li>Complex background work</li><li>Creative effects</li><li>Priority handling</li></ul>
       <a class="btn primary" href="#order">Choose Premium</a>
     </article>
@@ -149,7 +149,7 @@ footer strong{color:#fff}footer a{color:#ccc}
     <div class="grid">
       <div><label for="name">Your name</label><input id="name" name="name" required></div>
       <div><label for="email">Email address</label><input id="email" name="email" type="email" required></div>
-      <div><label for="package">Editing package</label><select id="package" name="package"><option>Basic Edit — £5</option><option>Standard Edit — £10</option><option>Premium Edit — £20</option><option>Bespoke quote</option></select></div>
+      <div><label for="package">Editing package</label><select id="package" name="package"><option>Basic Edit — 1 Boost</option><option>Standard Edit — 2 Boosts</option><option>Premium Edit — 3 Boosts</option><option>Bespoke quote</option></select></div>
       <div><label for="quantity">Number of photos</label><input id="quantity" name="quantity" type="number" min="1" value="1" required></div>
       <div class="full"><label for="request">What would you like edited?</label><textarea id="request" name="request" placeholder="Describe the changes you want..." required></textarea></div>
     </div>
@@ -157,6 +157,22 @@ footer strong{color:#fff}footer a{color:#ccc}
     <button class="btn primary" type="submit">Submit editing request</button>
     <p id="formMessage" role="status" style="margin-top:12px;font-weight:700"></p>
   </form>
+</section>
+
+
+<section id="discord-order" class="section">
+  <div class="section-head">
+    <span class="eyebrow">DISCORD ORDERS</span>
+    <h2>Boost, then open your ticket.</h2>
+    <p>Your Boost is your payment. Once the required Boosts are completed, all order details are handled inside your private DPES ticket.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><strong>01</strong><h3>Choose your edit</h3><p>Pick Basic, Standard, or Premium and check the Boost price.</p></div>
+    <div class="step"><strong>02</strong><h3>Boost DPES</h3><p>Join the Discord server and give the required number of server Boosts.</p></div>
+    <div class="step"><strong>03</strong><h3>Open a ticket</h3><p>Use the DPES ticket system in Discord after boosting.</p></div>
+    <div class="step"><strong>04</strong><h3>Fill out the form</h3><p>Submit your edit instructions and photos inside the ticket so we can start your order.</p></div>
+  </div>
+  <p style="margin-top:24px"><a class="btn btn-primary" href="https://discord.gg/zqaEf7Bjx" target="_blank" rel="noopener noreferrer">Join DPES Discord</a></p>
 </section>
 
 <section id="faq">
@@ -191,7 +207,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("orderForm").addEventListener("submit", function(e){
   e.preventDefault();
   const msg = document.getElementById("formMessage");
-  msg.textContent = "Your request has been prepared. Connect this form to a secure form service before accepting live orders.";
+  msg.textContent = "Your request has been prepared. After boosting the DPES Discord server, open a DPES order ticket and complete the order form inside Discord. Send your photos in the ticket.";
 });
 </script>
 </body>
